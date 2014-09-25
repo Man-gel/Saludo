@@ -12,14 +12,21 @@ namespace Saludo
 {
 	class Program
 	{
-		public static void Main(string[] args)
-		{
-			Console.WriteLine("Hello World!");
+                public void mostrarSaludo()
+                {
+                 	Console.WriteLine("Hello!");
 			
 			// TODO: Implement Functionality Here
 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
+                }
+
+
+		public static void Main(string[] args)
+		{
+			Program prueba = new Program();
+                        prueba.mostrarSaludo();
 		}
 	}
 }
