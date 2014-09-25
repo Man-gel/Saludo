@@ -12,20 +12,30 @@ namespace Saludo
 {
 	class Program
 	{
+
+            string nombre ="";
+                
+
+
                 public void mostrarSaludo()
                 {
-                 	Console.WriteLine("Hello!");
-			
-			// TODO: Implement Functionality Here
-			
-			Console.Write("Press any key to continue . . . ");
+                 	Console.WriteLine("Hola "+ nombre+ "!");
 			Console.ReadKey(true);
+                }
+
+
+                public void pedirNombre()
+                {
+                 	Console.WriteLine("Ingresa tu nombre:");
+			
+			nombre = Console.ReadLine();
                 }
 
 
 		public static void Main(string[] args)
 		{
 			Program prueba = new Program();
+                        prueba.pedirNombre();
                         prueba.mostrarSaludo();
 		}
 	}
